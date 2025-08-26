@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SehatScan AI - Authentication</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #14b814;
+            --background-color: #f8fcf8;
+            --text-primary: #0e1b0e;
+            --text-secondary: #4e974e;
+            --input-bg: #e7f3e7;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+            background-color: var(--background-color);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center justify-between p-4">
+<div class="w-12"></div>
+<h1 class="text-xl font-bold text-center flex-1">SehatScan AI</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="p-2 rounded-full hover:bg-gray-200/50">
+<span class="material-symbols-outlined text-[var(--text-primary)]">help_outline</span>
+</button>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-4">
+<div class="w-full max-w-md bg-[var(--card-bg)] rounded-2xl shadow-sm p-8">
+<div class="text-center mb-8">
+<h2 class="text-3xl font-bold tracking-tight">Welcome</h2>
+<p class="text-[var(--text-secondary)] mt-2">Your health assistant is here.</p>
+</div>
+<form class="space-y-6">
+<div>
+<label class="sr-only" for="email">Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-secondary)]">
+                            mail
+                            </span>
+<input autocomplete="email" class="form-input w-full rounded-lg border-none bg-[var(--input-bg)] h-14 pl-12 pr-4 placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50" id="email" name="email" placeholder="Email" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="sr-only" for="password">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-secondary)]">
+                            lock
+                            </span>
+<input autocomplete="current-password" class="form-input w-full rounded-lg border-none bg-[var(--input-bg)] h-14 pl-12 pr-4 placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50" id="password" name="password" placeholder="Password" required="" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-end">
+<a class="text-sm font-medium text-[var(--primary-color)] hover:underline" href="#">Forgot password?</a>
+</div>
+<div>
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-base font-semibold text-white bg-[var(--primary-color)] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)]" type="submit">
+                            Log In
+                        </button>
+</div>
+</form>
+<div class="mt-6">
+<div class="relative">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-gray-300"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-2 bg-white text-[var(--text-secondary)]">Or</span>
+</div>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-1 gap-4">
+<a class="w-full inline-flex justify-center py-3 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-base font-medium text-[var(--text-secondary)] hover:bg-gray-50" href="#">
+                        Sign Up
+                    </a>
+<a class="w-full inline-flex justify-center py-3 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-base font-medium text-[var(--text-secondary)] hover:bg-gray-50" href="#">
+                        Continue as Guest
+                    </a>
+</div>
+</div>
+</main>
+<footer class="text-center p-4">
+<p class="text-xs text-[var(--text-secondary)] max-w-xs mx-auto">By continuing, you agree to our <a class="font-medium underline" href="#">Terms of Service</a> and <a class="font-medium underline" href="#">Privacy Policy</a>.</p>
+</footer>
+</div>
+
+</body></html>

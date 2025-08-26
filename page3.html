@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SehatScan AI - Upload Report</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #14b814;
+            --background-color: #f7fef7;
+            --text-primary: #0a110a;
+            --text-secondary: #597c59;
+            --border-color: #d1e7d1;
+            --accent-color: #e7f3e7;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+            background-color: var(--background-color);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between">
+<header class="sticky top-0 z-10 bg-white/80 backdrop-blur-md">
+<div class="flex items-center p-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-gray-100">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold pr-10">Upload Report</h1>
+</div>
+</header>
+<main class="flex-grow px-6 py-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold">Upload Your Medical Report</h2>
+<p class="mt-2 text-[var(--text-secondary)]">
+                    Get an instant analysis and summary from our AI. Supports PDF, JPG, and PNG formats.
+                </p>
+</div>
+<div class="mt-12 flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-[var(--border-color)] bg-white p-8 text-center transition-colors duration-300 hover:border-[var(--primary-color)] hover:bg-[var(--accent-color)]">
+<div class="mb-4 text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-6xl">upload_file</span>
+</div>
+<p class="font-semibold">Drag &amp; Drop your file here</p>
+<p class="text-sm text-[var(--text-secondary)]">or</p>
+<label class="mt-4 inline-flex cursor-pointer items-center justify-center rounded-full bg-[var(--primary-color)] px-6 py-3 font-semibold text-white shadow-sm transition-transform duration-200 hover:scale-105 active:scale-95" for="file-upload">
+                    Choose a file
+                </label>
+<input class="sr-only" id="file-upload" name="file-upload" type="file"/>
+<p class="mt-4 text-xs text-[var(--text-secondary)]">Max file size: 10MB</p>
+</div>
+<div class="mt-8 hidden">
+<h3 class="text-lg font-semibold">Uploaded File</h3>
+<div class="mt-4 flex items-center justify-between rounded-lg border border-[var(--border-color)] bg-white p-4">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-[var(--accent-color)] text-[var(--primary-color)]">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<p class="font-medium">medical_report.pdf</p>
+<p class="text-sm text-[var(--text-secondary)]">3.4 MB - Uploaded</p>
+</div>
+</div>
+<button class="text-[var(--text-secondary)] hover:text-[var(--text-primary)]">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 border-t border-[var(--border-color)] bg-white/90 backdrop-blur-md">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center gap-1 rounded-lg px-4 py-2 text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 rounded-lg bg-[var(--accent-color)] px-4 py-2 text-[var(--primary-color)] transition-colors hover:text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-xs font-medium">Reports</span>
+</a>
+<a class="flex flex-col items-center gap-1 rounded-lg px-4 py-2 text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SehatScan AI - Processing Report</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-50: #f0fdf4;
+        --primary-100: #dcfce7;
+        --primary-200: #bbf7d0;
+        --primary-300: #86efac;
+        --primary-400: #4ade80;
+        --primary-500: #22c55e;
+        --primary-600: #16a34a;
+        --primary-700: #15803d;
+        --primary-800: #166534;
+        --primary-900: #14532d;
+        --primary-950: #052e16;
+        --surface-0: #ffffff;
+        --surface-50: #f8fafc;
+        --surface-100: #f1f5f9;
+        --surface-200: #e2e8f0;
+        --surface-300: #cbd5e1;
+        --surface-400: #94a3b8;
+        --surface-500: #64748b;
+        --surface-600: #475569;
+        --surface-700: #334155;
+        --surface-800: #1e293b;
+        --surface-900: #0f172a;
+        --surface-950: #020617;
+      }
+      body {
+        font-family: 'Lexend', sans-serif;
+      }
+      .animate-pulse-slow {
+        animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: .7;
+        }
+      }
+      @keyframes progress {
+        0% { width: 0%; }
+        25% { width: 40%; }
+        50% { width: 70%; }
+        75% { width: 90%; }
+        100% { width: 100%; }
+      }
+      .progress-bar {
+          animation: progress 8s ease-in-out infinite;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--surface-50)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root">
+<header class="bg-transparent absolute top-0 left-0 right-0 z-10">
+<div class="flex items-center justify-between p-4">
+<button class="text-[var(--surface-900)] flex size-10 shrink-0 items-center justify-center rounded-full bg-[var(--surface-0)] shadow-md">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-[var(--surface-900)] text-lg font-bold">Processing Report</h1>
+<div class="size-10"></div>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center text-center px-6 pt-20 pb-10">
+<div class="animate-pulse-slow w-48 h-48 mb-8 flex items-center justify-center">
+<svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="50" fill="none" r="45" stroke="var(--primary-200)" stroke-width="5"></circle>
+<path d="M50 5 A 45 45 0 0 1 95 50" fill="none" stroke="var(--primary-600)" stroke-linecap="round" stroke-width="5">
+<animateTransform attributeName="transform" dur="1.5s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"></animateTransform>
+</path>
+<text fill="var(--primary-700)" font-family="Lexend, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" x="50" y="55">AI</text>
+</svg>
+</div>
+<h2 class="text-[var(--surface-900)] text-3xl font-bold leading-tight tracking-tight mb-3">Analyzing your report...</h2>
+<p class="text-[var(--surface-500)] text-base font-normal leading-relaxed max-w-sm">
+                Our AI is carefully reviewing your medical report to provide you with a comprehensive understanding of your health insights. This may take a moment.
+            </p>
+<div class="w-full max-w-sm mt-12">
+<div class="flex justify-between items-center mb-2">
+<p class="text-[var(--primary-700)] text-sm font-medium">Processing</p>
+<p class="text-[var(--primary-700)] text-sm font-semibold">Please wait</p>
+</div>
+<div class="w-full bg-[var(--primary-200)] rounded-full h-2.5 overflow-hidden">
+<div class="bg-[var(--primary-600)] h-2.5 rounded-full progress-bar"></div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-[var(--surface-0)]/80 backdrop-blur-lg border-t border-[var(--surface-200)] rounded-t-2xl shadow-[0_-4px_16px_rgba(0,0,0,0.05)]">
+<nav class="flex justify-around items-center h-20 px-4">
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--surface-500)]" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--primary-600)] p-3 rounded-full bg-[var(--primary-100)]" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-xs font-bold">Reports</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--surface-500)]" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
